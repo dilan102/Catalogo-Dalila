@@ -36,9 +36,20 @@ export async function getCurrentUser() {
   return data.user ?? null;
 }
 
-export async function signInAdmin(email: string, password: string) {
+const adminUsername = "dalilaz";
+const adminPassword = "dalila";
+
+export async function signInAdmin(username: string, password: string) {
+  if (username !== adminUsername || password !== adminPassword) {
+    throw new Error("Usuario o clave incorrectos.");
+  }
+
   const client = requireSupabase();
-  const { error } = await client.auth.signInWithPassword({ email, password });
+  const authEmail = import.meta.env.VITE_ADMIN_EMAIL ?? username;
+  const { error } = await client.auth.signInWithPassword({
+    email: authEmail,
+    password,
+  });
   if (error) throw new Error(error.message);
 }
 
