@@ -444,8 +444,7 @@ img {
   height: 100%;
   min-height: 180px;
   place-items: center;
-  background:
-    linear-gradient(135deg, var(--blue-50), var(--gray-100));
+  background: linear-gradient(135deg, var(--blue-50), var(--gray-100));
   color: var(--gray-500);
   font-weight: 800;
 }
@@ -824,7 +823,12 @@ img {
 .skeleton {
   min-height: 260px;
   border-radius: 8px;
-  background: linear-gradient(90deg, var(--gray-100), var(--blue-50), var(--gray-100));
+  background: linear-gradient(
+    90deg,
+    var(--gray-100),
+    var(--blue-50),
+    var(--gray-100)
+  );
   background-size: 200% 100%;
 }
 
@@ -861,7 +865,11 @@ img {
   place-items: center;
   padding: 7rem 1rem 3rem;
   background:
-    linear-gradient(135deg, rgba(238, 248, 255, 0.92), rgba(247, 249, 251, 0.96)),
+    linear-gradient(
+      135deg,
+      rgba(238, 248, 255, 0.92),
+      rgba(247, 249, 251, 0.96)
+    ),
     var(--gray-50);
 }
 
