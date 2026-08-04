@@ -1004,7 +1004,7 @@ img {
     padding-top: 6.5rem;
     background:
       linear-gradient(180deg, rgba(20, 30, 38, 0.68), rgba(20, 30, 38, 0.26)),
-      url("/Fondo_hero_celular.png") center/cover no-repeat;
+      url("/Fondo_hero_mobil.jpeg") center/cover no-repeat;
   }
 
   .HeroContenido {
