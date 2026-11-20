@@ -43,21 +43,21 @@ export default function HomePage() {
       <main className="home-main">
         <section className="intro-band">
           <div className="intro-copy">
-            <p>Atención sobria y personalizada</p>
-            <h2>Un catálogo claro para elegir con calma.</h2>
+            <p>Elegir sin prisa</p>
+            <h2>Un catálogo pensado para acompañarte con claridad.</h2>
           </div>
           <div className="intro-grid">
             <article>
               <strong>Materiales</strong>
-              <span>Opciones resistentes y cuidadas para cada homenaje.</span>
+              <span>Piezas elegidas por su belleza y resistencia.</span>
             </article>
             <article>
               <strong>Asesoría</strong>
-              <span>Acompañamiento humano durante la elección.</span>
+              <span>Te escuchamos y resolvemos tus dudas con calma.</span>
             </article>
             <article>
-              <strong>Orden</strong>
-              <span>Productos organizados por secciones directas.</span>
+              <strong>Diseño</strong>
+              <span>Cada detalle puede reflejar una memoria especial.</span>
             </article>
           </div>
         </section>
@@ -65,13 +65,25 @@ export default function HomePage() {
         <SectionsGrid sections={sections} />
         <FeaturedCarousel products={latestProducts} loading={loading} />
 
+        <section className="process-band" aria-labelledby="proceso-title">
+          <div className="process-intro">
+            <p className="eyebrow">Cómo te acompañamos</p>
+            <h2 id="proceso-title">Un proceso sereno, de principio a fin.</h2>
+          </div>
+          <ol className="process-list">
+            <li><span>01</span><strong>Cuéntanos qué necesitas</strong><p>Escríbenos y recibe orientación inicial.</p></li>
+            <li><span>02</span><strong>Elegimos juntos</strong><p>Revisamos opciones, medidas y detalles.</p></li>
+            <li><span>03</span><strong>Creamos tu homenaje</strong><p>Te acompañamos hasta el resultado final.</p></li>
+          </ol>
+        </section>
+
         <section className="contact-band" id="contacto">
           <div>
-            <p>Contacto</p>
-            <h2>Estamos para ayudarte.</h2>
+            <p>Hablemos</p>
+            <h2>Estamos aquí para orientarte.</h2>
           </div>
           <a className="primary-button" href="tel:+570000000000">
-            Llamar ahora
+            Solicitar orientación
           </a>
         </section>
       </main>

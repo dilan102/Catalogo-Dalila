@@ -122,5 +122,7 @@ on storage.objects for delete
 to authenticated
 using (bucket_id = 'product-images' and public.is_catalog_admin());
 
+-- Crea en Supabase Auth el usuario cuyo correo configuras como VITE_ADMIN_EMAIL,
+-- con la clave DZTZ. El acceso visible usa el usuario DalilaZ.
 -- Después de crear el usuario admin en Supabase Auth, ejecuta:
 -- insert into public.admin_users (user_id) values ('UUID_DEL_USUARIO');

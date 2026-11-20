@@ -34,8 +34,8 @@ export default function Navbar({ isAdmin, onAdminChange }: NavbarProps) {
               ✝
             </span>
             <span>
-              <strong>Memoria Eterna</strong>
-              <small>Catálogo conmemorativo</small>
+              <strong>Memoria Serena</strong>
+              <small>Homenajes con significado</small>
             </span>
           </Link>
 

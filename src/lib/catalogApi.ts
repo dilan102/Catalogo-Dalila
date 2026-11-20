@@ -36,11 +36,12 @@ export async function getCurrentUser() {
   return data.user ?? null;
 }
 
-const adminUsername = "dalilaz";
-const adminPassword = "dalila";
+// La autenticación real y los permisos de escritura se validan en Supabase.
+// VITE_ADMIN_EMAIL debe apuntar al correo del usuario administrador creado allí.
+const adminUsername = "DalilaZ";
 
 export async function signInAdmin(username: string, password: string) {
-  if (username !== adminUsername || password !== adminPassword) {
+  if (username !== adminUsername) {
     throw new Error("Usuario o clave incorrectos.");
   }
 
